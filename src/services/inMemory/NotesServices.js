@@ -40,7 +40,7 @@ class NotesService {
     return note;
   }
 
-  editNote(id, { title, body, tags }) {
+  editNoteById(id, { title, body, tags }) {
     const index = this._notes.findIndex((note) => note.id === id);
 
     if (index === -1) {
@@ -58,7 +58,7 @@ class NotesService {
     };
   }
 
-  deleteNote(id) {
+  deleteNoteById(id) {
     const index = this._notes.findIndex((note) => note.id === id);
 
     if (index === -1) {
