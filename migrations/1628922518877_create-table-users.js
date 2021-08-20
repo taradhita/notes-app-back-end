@@ -18,7 +18,7 @@ exports.up = (pgm) => {
       unique: true,
       notNull: true,
     },
-    fullName: {
+    fullname: {
       type: 'TEXT',
       notNull: true,
     },
